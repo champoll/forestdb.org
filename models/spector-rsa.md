@@ -1,9 +1,16 @@
-//Benjamin Spector's implementation of homogeneity in plural definites in the RSA model, 
-//in his paper at https://mycore.core-cloud.net/index.php/s/yNt1KHqUpx7nuLG#pdfviewer
+---
+layout: model
+title: Example
+model-language: webppl
+model-language-version: v0.9.13
+---
 
-// Implementation by Lucas Champollion
+Benjamin Spector's implementation of homogeneity in plural definites in the RSA model, 
+in his paper at https://mycore.core-cloud.net/index.php/s/yNt1KHqUpx7nuLG#pdfviewer
 
+Implementation by Lucas Champollion
 
+~~~~
 
 // worlds
 var w = {
@@ -192,7 +199,7 @@ var utility = function(utterance,world,qud,n) {
 
 
 // print function 'condProb2Table' for conditional probability tables
-// by Greg Scontras
+// by problang.org
 ///fold:
 var condProb2Table = function(condProbFct, row_names, col_names, precision){
   var matrix = map(function(row) {
@@ -254,6 +261,7 @@ var precision = 2 // how many decimals displayed
 
 display(condProb2Table(condProbFct,rowNames,colNames,precision))
 
+~~~~
 
 
 
